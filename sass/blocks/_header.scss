@@ -1,0 +1,230 @@
+.header{
+    background: url(../../../delote-beauty/img/header/bgc.webp) top center no-repeat;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+}
+.mobile-nav__list{
+    display: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(../../../delote-beauty/img/line.svg);
+        max-width: 1296px;
+        width: 100%;
+        height: 1px;
+        top: 100%;
+        left: 0;
+    }
+		&__instagram {
+            margin-right: 126px;
+		}
+        
+
+		&__logo {
+            margin: 0 auto;
+            width: 40px;
+            height: 39px;
+		}
+        &__btn{
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin-left: 113px;
+        }
+}
+.nav {
+
+
+
+    &__list {
+        display: flex;
+            gap: 0 80px;
+    }
+
+
+    &__link {
+        font-family: 'Cormorant Garamond';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        color: #FFFFFF;
+        padding-bottom: 5px;
+        position: relative;
+        
+        &::before{
+            position: absolute;
+            content: "";
+            width: 70%;
+            height: 2px;
+            top: 100%;
+            left: 0;
+            opacity: 0;
+            background-color: #CDAA7D;
+            transition: opacity .3s ease-in;
+        }
+        &:hover{
+        color: #CDAA7D;
+        &::before{
+        opacity: .8;
+        visibility: visible;
+        }
+    }
+    }
+}
+
+.header-content {
+    padding: 260px 0 100px;
+    &__block{
+        max-width: 599px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__title {
+        font-family: 'Garamond';
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 120%;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 290px;
+        span{
+            font-family: 'Garamond';
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 120%;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
+    &__span {
+        font-family: 'Cormorant Garamond';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+        display: block;
+        width: 127px;
+        margin: 0 auto;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url(../../../delote-beauty/img/header/mouse.svg);
+            width: 20px;
+            height: 30px;
+            left: -40px;
+            top: -2px;
+            animation: before 3s infinite;
+        }
+    }
+    @keyframes before {
+        0% {
+          top: -20%;
+          opacity: 0.2;
+        }
+        50% {
+          top: 50%;
+          opacity: 1;
+        }
+        100% {
+          top: -20%;
+          opacity: 0.2;
+        }
+      }
+    
+}
+
+
+
+
+//rightside
+
+.rightside-menu {
+    position: absolute;
+    z-index: 10;
+    background-color: #111111;
+    max-width: 475px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .4s;
+    transform: translateY(-1500px);
+    &--open{
+        display: block;
+         transform: translateY(0px);
+    }
+    &__content{
+        max-width: 315px;
+        margin: 0 auto;
+    }
+    &__close {
+        padding: 0;
+        background-color: transparent;
+        margin: 42px 0 176px 80px;
+        transition: transform .6s ease;
+        &:hover{
+            transform: rotate(-270deg);
+        }
+    }
+
+
+    &__text {
+        max-width: 315px;
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin-bottom: 80px;        
+    }
+
+    &__contacts{
+        margin-bottom: 60px;
+    }
+    &__info
+    span {
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        color: #FFFFFF;
+        display: block;
+        padding-bottom: 15px;
+    }
+
+
+    &__title {
+        font-family: 'Garamond';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        color: #FFFFFF;
+        margin-bottom: 25px;      
+    }
+
+
+
+    &__phone {
+        display: block;
+        padding-bottom: 15px;
+    }
+
+
+  
+}
+
+.rightside-menu--open{
+    display: block;
+     transform: translateY(0px);
+}

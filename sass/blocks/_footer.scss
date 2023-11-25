@@ -1,0 +1,69 @@
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 110px;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(../../../delote-beauty/img/line.svg);
+        max-width: 1296px;
+        width: 100%;
+        height: 1px;
+        top: -80px;
+        left: 0;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        background-image: url(../../../delote-beauty/img/line.svg);
+        max-width: 1296px;
+        width: 100%;
+        height: 1px;
+        bottom: -80px;
+        left: 0;
+    }
+}
+.footer-contact {
+
+    &__phone {
+        display: block;
+        padding-bottom: 15px;
+    }
+  
+
+    &__link {
+    }
+}
+.footer-title {
+    font-family: 'Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.footer{
+span{
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+    display: block;
+    padding-bottom: 15px;
+}
+}
+
+.footer-copyrigt{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+

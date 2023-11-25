@@ -1,0 +1,27 @@
+// media
+$media_xxxl: 'max-width: 1400px';
+$media_xxl: 'max-width: 1300px';
+$media_xl: 'max-width: 1200px';
+$media_lg: 'max-width: 1100px';
+$media_lg2: 'max-width: 1000px';
+$media_lg3: 'max-width: 900px';
+$media_md: 'max-width: 800px';
+$media_md2: 'max-width: 700px';
+$media_sm: 'max-width: 600px';
+$media_sm2: 'max-width: 500px';
+$media_xs: 'max-width: 400px';
+
+
+:root {
+  --title: rgba(255, 255, 255, 0.9);
+  --accent-color: #fff;
+  --accent: rgba(46, 93, 120, 0.6);
+  --text: rgba(255, 255, 255, 0.9);
+  --link: #fff;
+  --section-title: rgba(255, 255, 255, 0.9);
+  --bgnav: rgba(24, 24, 24, 0.8);
+  --bgsidebar: rgba(24, 24, 24, 0.8);
+  --button: rgba(227, 171, 171, 0.6);
+  --button-menu: #E3ABAB;
+  --stroke: #E3ABAB;
+}

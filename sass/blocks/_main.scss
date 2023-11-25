@@ -1,0 +1,160 @@
+//section-about
+
+.about {
+    &__item {
+        max-width: 856px;
+        margin: 100px auto 150px;
+        text-align: center;
+    }
+    &__img {
+        margin-bottom: 60px;
+    }
+    &__title {
+        font-family: 'Cormorant Garamond';
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;        
+    }
+}
+
+//section-services
+
+.services {
+}
+.service-column {
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 396px);
+    gap: 80px 45px;
+    justify-content: center;
+}
+.services-column {
+        &__cart {
+            position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                background-image: url(../../../delote-beauty/img/main/rectangle-services.svg);
+                width: 396px;
+                height: 300px;
+                left: 20px;
+                top: -20px;
+                z-index: -1;
+            }
+		}
+        &__img {
+            margin-bottom: 30px;
+          
+		}
+        &__title {
+            font-family: 'Garamond';
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 120%;
+            color: #FFFFFF;            
+		}
+}
+
+//section-cosmetics
+
+
+.cosmetics-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 306px);
+    gap: 50px 20px;
+    justify-content: center;
+    margin-bottom: 100px;
+  
+}
+
+//section-ourwork
+
+
+.ourwork {
+        &__title {
+            font-family: 'Garamond';
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 80px;            
+		}
+}
+.ourwork-nav {
+		&__inner {
+            display: flex;
+            justify-content: space-between;
+            max-width: 722px;
+            margin: 0 auto 60px;
+            position: relative;
+		}
+
+		&__list {
+            font-family: 'Cormorant Garamond';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 130%;
+            text-align: center;
+            color: #FFFFFF;
+            padding-bottom: 5px;
+            position: relative;
+            cursor: pointer;
+            &::before{
+                position: absolute;
+                content: "";
+                width: 70%;
+                height: 2px;
+                top: 100%;
+                left: 0;
+                opacity: 0;
+                background-color: #CDAA7D;
+                transition: opacity .3s ease-in;
+            }
+            &:hover{
+            color: #CDAA7D;
+            &::before{
+            opacity: .8;
+            visibility: visible;
+                }
+		    }
+        }
+}
+.ourwork-nav__list.active{
+    &::after{
+        position: absolute;
+        content: "";
+        width: 70%;
+        height: 2px;
+        top: 100%;
+        left: 0;
+        background-color: #CDAA7D;
+    }
+}
+.ourwork-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 416px);
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 180px;
+}
+.ourwork-tabs{
+    display: none;
+}
+.ourwork-tabs.active{
+    display: block;
+}
+.ourwork-title{
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 20px;
+    
+    text-align: right;
+
+    color: #FFFFFF;
+}

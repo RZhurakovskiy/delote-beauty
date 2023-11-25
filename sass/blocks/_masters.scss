@@ -1,0 +1,57 @@
+.masters-content {
+    margin: 110px 0 180px;
+}
+.masters-content-title {
+    font-family: 'Garamond';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+}
+.masters-lolumn {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 80px 40px;
+    justify-content: center;
+}
+.masters-cart {
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(../../../delote-beauty/img/masters/rectangle-masters.svg);
+        width: 396px;
+        height: 477px;
+        left: 15px;
+        top: -20px;
+        z-index: -1;
+    }
+
+		&_img {
+            margin-bottom: 30px;
+		}
+
+		// .masters-cart__name
+
+		&__name {
+            font-family: 'Cormorant Garamond';
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 130%;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+           
+		}
+
+		// .masters-cart__jobtitle
+
+		&__jobtitle {
+            font-family: 'Cormorant Garamond';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            color: #FFFFFF;
+		}
+}

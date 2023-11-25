@@ -1,0 +1,17 @@
+@import "./components/reset";
+@import "./components/default";
+@import "./components/vars";
+
+@import "./components/preloader";
+
+@import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/footer";
+
+@import "./blocks/reviews";
+@import "./blocks/masters";
+@import "./blocks/price";
+@import "./blocks/contact";
+@import "./blocks/cosmetics";
+
+@import "media.scss";

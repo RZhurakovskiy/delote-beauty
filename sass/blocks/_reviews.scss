@@ -1,0 +1,154 @@
+.container-reviews{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+.reviews-content{
+    margin: 50px 0;
+}
+
+.swiper-wrapper {
+    display: inline-flex;
+}
+
+.reviews-body {
+   
+
+    margin: 0px auto 100px;
+    padding: 40px;
+    border: 1px solid #CDAA7D;
+    &__text {
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+    &__name {
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+}
+.reviews-swipper{
+
+&__buttons {
+    position: absolute;
+    bottom: 55px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80px;
+    width: 100%;
+}
+&__btn {
+    width: 30px;
+    height: 30px;
+    background: url(../../../delote-beauty/img/arrow.svg);
+    cursor: pointer;
+}
+}
+
+.swiper-button-next{
+    transform: rotate(180deg);
+}
+
+.form-container{
+    max-width: 600px;
+    margin: 0 auto 120px;
+}
+.reviews-form {
+    max-width: 600px;
+}
+.form {
+    text-align: center;
+
+
+}
+
+
+
+.reviews-title {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+
+.reviews-label{
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+}
+
+.reviews-input{
+    font-family: 'Cormorant Garamond';
+
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #CDAA7D;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    resize: none;
+    font-size: 18px;
+    &::placeholder{
+        font-family: 'Cormorant Garamond';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin-bottom: 20px; 
+    }
+}
+
+.textarea {
+    font-family: 'Cormorant Garamond';
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #CDAA7D;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    resize: none;
+    font-size: 18px;
+    &::placeholder{
+        font-family: 'Cormorant Garamond';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin-bottom: 20px;   
+    }
+}
+.reviews-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 10px;
+    color: #fff;
+    border: 1px solid #CDAA7D;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+   
+}
+
+
+
+
+
